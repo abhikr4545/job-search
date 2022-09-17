@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/job-search/static/css/main.08c90836.css",
+    "main.js": "/job-search/static/js/main.59c64621.js",
+    "static/media/nav-background.jpeg": "/job-search/static/media/nav-background.c315b99619fce0df96a7.jpeg",
+    "index.html": "/job-search/index.html",
+    "main.08c90836.css.map": "/job-search/static/css/main.08c90836.css.map",
+    "main.59c64621.js.map": "/job-search/static/js/main.59c64621.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08c90836.css",
+    "static/js/main.59c64621.js"
+  ]
+}
