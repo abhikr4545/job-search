@@ -1,0 +1,44 @@
+@use "../../index.scss";
+
+.city-searchbox-container {
+  margin-bottom: 30px;
+
+  .title {
+    font-family: index.$Poppins;
+    font-weight: 700;
+    font-size: 18px;
+    color: #B9BDCF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 21px;
+  }
+
+  .searchbox {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    background-color: #ffffff;
+
+    .icon {
+      color: #B9BDCF;
+      width: 15px;
+      height: 15px;
+      margin-left: 10px;
+    }
+
+    input {
+      outline: none;
+      border: none;
+      width: 290px;
+      margin-left: 10px;
+      color: #B9BDCF;
+
+      &::placeholder {
+        font-family: index.$Roboto;
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.job-list {
+  margin-top: 12px;
+
+  .paginationBtn {
+    width: auto;
+    overflow: hidden;
+    height: 80px;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    color: #B7BCCE;
+  }
+
+  .paginationBtn a {
+    min-width: 36px;
+    height: 36px;
+    margin: 8px;
+    padding: 10px;
+    border: 1px solid #B7BCCE;
+    color: #B7BCCE;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .previousBtn {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #B7BCCE;
+    color: #B7BCCE;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .nextBtn {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid #2b2eff;
+    color: #2b2eff;
+    cursor: pointer;
+  }
+
+  .paginationDisabled a {
+    background: gray;
+    cursor: not-allowed;
+  }
+
+  .paginationActive a {
+    min-width: 36px;
+    height: 36px;
+    margin: 8px;
+    background: #1E86FF;
+    border: 1px solid #1E86FF;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 30px;
+  }
+}

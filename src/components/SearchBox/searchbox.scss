@@ -1,0 +1,107 @@
+@use "../../index.scss";
+
+.search-box {
+  margin: 16px auto;
+  height: 8.625rem;
+  border-radius: 8px;
+  background-color: index.$blue;
+  font-family: index.$Poppins;
+  background: url("../../assets/nav-background.jpeg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .search-container {
+    padding: 20px;
+    background: #fff;
+    width: 20rem;
+    height: 3.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .search-result {
+      position: absolute;
+      z-index: 10;
+      height: 100px;
+      background-color: #fff;
+      width: 19.8rem;
+      top: 60px;
+      left: 2px;
+      border-radius: 4px;
+      overflow-y: scroll;
+      
+      div {
+        margin-left: 18px;
+        cursor: pointer;
+        width: fit-content;
+      }
+    }
+
+    .icon-placeholder-container {
+      display: flex;
+      align-items: center;
+    
+
+    .icon {
+      color: #B9BDCF;
+      width: 15px;
+      height: 14.25px;
+      margin-right: 10px;
+    }
+
+    .search-text {
+      outline: none;
+      border: none;
+      width: 8.75rem;
+      height: 14px;
+      font-size: 12px;
+      font-weight: 400;
+
+      &::placeholder {
+        font-family: index.$Roboto;
+      }
+    }
+    }
+  }
+
+  .search-button {
+    background-color: index.$blue;
+    outline: none;
+    border: none;
+    width: 6.5rem;
+    height: 3rem;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    line-height: 18.75px;
+    font-weight: 500;
+    font-family: index.$Roboto;
+    margin-right: -15px;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    .search-container {
+      width: 50rem;
+      height: 3.5rem;
+
+      .search-result {
+        width: 49.8rem;
+        height: 10rem;
+      }
+
+      .icon-placeholder-container {
+        .search-text {
+          width: 40rem;
+          height: 14px;
+        }
+      }
+    } 
+  }
+}
